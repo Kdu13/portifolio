@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <link rel="stylesheet" href="styles/dark-mode.css" />
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="icon" type="image/png" href="images/Icon.ico"/>
+  <title>Carlos Eduardo || Dev Full-Stack</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <section class="sessao1">
+        <nav class="cabecalho">
+          <a href="#inicio"><img src="images/Logo_Light.png" alt="Logo" /></a>
+          <a href="#inicio">Início</a>
+          <a href="#sobre_mim">Sobre mim</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#curriculo">Currículo</a>
+          <a href="#contato">Contato</a>
+          <button class="theme-toggle" onclick="toggleTheme()">
+            <span class="theme-icon" id="themeIcon">💡</span>
+          </button>
+        </nav>
+      </section>
+    </div>
+  </header>
+
+
+  <main>
+    <section id="inicio" class="apresentacao">
+      <div class="imagem">
+        <img src="images/Minha_Imagem.png" alt="Carlos Eduardo" width="70%" />
+      </div>
+
+      <section class="sessao2">
+        <h2 class="slogan">
+          Seu projeto digital, desenvolvido com estratégia, inovação e alta performance.
+        </h2>
+        <p>
+          Olá, sou Carlos Eduardo, desenvolvedor Full Stack em início de carreira, atualmente curso Desenvolvimento de
+          Software Multiplataforma (DSM) na Fatec Praia Grande e possuo certificação Oracle Database Foundations...
+        </p>
+      </section>
+
+      <section class="sessao3">
+        <h2>Minhas Redes:</h2>
+        <a href="https://github.com/Kdu13" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/carlos-eduardo-correia/" target="_blank"
+          rel="noopener noreferrer">LinkedIn</a>
+      </section>
+    </section>
+
+    <section id="sobre_mim" class="sobre_mim">
+      <h2>Sobre Mim:</h2>
+      <p>
+        Sou um desenvolvedor Full Stack apaixonado por tecnologia e inovação...
+      </p>
+    </section>
+
+    <section id="projetos" class="projetos">
+      <h2>Projetos em Destaque:</h2>
+
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide card">
+            <h3>ReparaBit</h3>
+            <img src="images/ReparaBit.png" alt="ReparaBit" />
+            <p>Um projeto básico front-end de uma empresa fictícia.</p>
+            <button><a href="https://kdu13.github.io/ReparaBit/" target="_blank">Conferir</a></button>
+          </div>
+          <div class="swiper-slide card">
+            <h3>HotelPet</h3>
+            <img src="images/HotelPet.png" alt="HotelPet" />
+            <p>Um projeto básico front-end de uma empresa fictícia.</p>
+            <button><a href="https://kdu13.github.io/Hotel-Pet/" target="_blank">Conferir</a></button>
+          </div>
+          <div class="swiper-slide card">
+            <h3>MangáPlus</h3>
+            <img src="images/MangaPlus.png" alt="MangáPlus" />
+            <p>Um projeto básico front-end de uma empresa que já existe.</p>
+            <button><a href="https://kdu13.github.io/MangaPlus/" target="_blank">Conferir</a></button>
+          </div>
+          <div class="swiper-slide card">
+            <h3>RE Assistência Técnica</h3>
+            <img src="images/RE_Assitencia_Tecnica.png" alt="RE Assistência Técnica" />
+            <p>Projeto semestral da faculdade, um site para uma empresa.</p>
+            <button><a href="https://kdu13.github.io/PROJETO-DSM1/" target="_blank">Conferir</a></button>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <section id="contato" class="sessao4">
+      <div class="contato">
+        <h2>Contatos</h2>
+        <div class="link_footer">
+          <a id="email-link" href="#"><i class="fa-solid fa-envelope icon_footer" style="color: #e8e8e8;"></i><h3>Email</h3></a>
+          
+        </div>
+        <div class="link_footer">
+          <a href="https://github.com/Kdu13" target="_blank"><i class="fa-brands fa-github icon_footer"
+              style="color: #e8e8e8;"></i><h3>GitHub</h3>
+            </a>
+            
+        </div>
+
+        <div class="link_footer">
+          <a href="https://www.linkedin.com/in/carlos-eduardo-correia/" target="_blank"><i class="fa-brands fa-linkedin icon_footer" style="color: #e8e8e8;"></i><h3>LinkedIn</h3></a>
+          
+        </div>
+
+        <div class="link_footer">
+          <a id="whatsapp-link" href="#"><i class="fa-brands fa-whatsapp icon_footer" style="color: #e8e8e8;"></i><h3>WhatsApp</h3></a>
+        </div>
+      </div>
+
+      <div class="logo">
+        <a href="#inicio"><img src="images/Logo_Light.png" alt="Logo"></a>
+      </div>
+
+      <div class="repositorio">
+        <div class="link_footer">
+          <h2>Repositório</h2>
+          <a href=""><i class="fa-solid fa-code icon_footer" style="color: #e8e8e8;"></i><h3>Código</h3></a>
+        </div>
+        
+      </div>
+
+    </section>
+    <section class="direitos">
+      <p>Desenvolvido por Carlos Eduardo Correia © 2023 Todos os direitos reservados.</p>
+
+    </section>
+
+  </footer>
+
+
+
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
