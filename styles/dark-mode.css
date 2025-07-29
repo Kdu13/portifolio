@@ -81,6 +81,14 @@
     color: #bbb;
 }
 
+.dark-mode .logo a img::before {
+    background: linear-gradient(90deg, transparent, rgba(255,215,0,0.7), transparent);
+}
+
+.dark-mode .logo a:hover img {
+    filter: brightness(1.3) drop-shadow(0 0 25px rgba(255,215,0,0.8));
+}
+
 .dark-mode .direitos p {
     color: #777;
 }
