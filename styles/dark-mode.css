@@ -7,6 +7,14 @@
     color: #ccc;
 }
 
+.dark-mode .cabecalho a::before {
+    background: linear-gradient(45deg, transparent, rgba(255,215,0,0.4), transparent);
+}
+
+.dark-mode .cabecalho a:hover img {
+    filter: brightness(1.2) drop-shadow(0 0 15px rgba(255,215,0,0.6));
+}
+
 .dark-mode {
     background-color: #121212;
     color: #e0e0e0;

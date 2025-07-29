@@ -106,41 +106,10 @@
     flex-shrink: 0;
 }
 
-.sessao3 a .text {
-    padding-left: 15px;
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: all 0.3s ease;
-    white-space: nowrap;
-    color: inherit;
-}
-
-/* Estilos específicos para GitHub */
-
-.sessao3 a.github:hover {
-    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-    transform: translateX(5px);
-    width: 35%;
-    box-shadow: 0 5px 20px rgba(36, 41, 46, 0.3);
-}
-
-/* Estilos específicos para LinkedIn */
-
-.sessao3 a.linkedin:hover {
-    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-    transform: translateX(5px);
-    width: 35%;
-    box-shadow: 0 5px 20px rgba(0, 119, 181, 0.3);
-}
-
 /* Animação no hover */
 .sessao3 a:hover .text {
     opacity: 1;
     transform: translateX(0);
-}
-
-.sessao3 a:hover .icon {
-    transform: scale(1.1) rotate(5deg);
 }
 
 /* Efeito de brilho */
