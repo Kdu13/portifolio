@@ -30,6 +30,20 @@
     color: gold;
 }
 
+.dark-mode .sessao3 a {
+    background: linear-gradient(135deg, #2a2a2a, #1e1e1e);
+    color: #e0e0e0 !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+}
+
+.dark-mode .sessao3 a.github:hover {
+    background: linear-gradient(135deg, #3a3a3a, #2e2e2e);
+}
+
+.dark-mode .sessao3 a.linkedin:hover {
+    background: linear-gradient(135deg, #1a365d, #2a4a6b);
+}
+
 .dark-mode .imagem img{
     filter: drop-shadow(0px 0px 20px gold);
 }

@@ -91,6 +91,63 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Adicione esta função após as outras funções no seu script.js
+
+function updateImages() {
+    const logoImages = document.querySelectorAll('img[src*="Logo_"]');
+    
+    logoImages.forEach(img => {
+        if (currentTheme === 'dark') {
+            // Trocar para a imagem dourada
+            img.src = 'images/Logo_Dark.png';
+        } else {
+            // Trocar para a imagem azul  
+            img.src = 'images/Logo_Light.png';
+        }
+    });
+}
+
+// Modifique a função toggleTheme() existente adicionando a chamada updateImages()
+function toggleTheme() {
+    // Adicionar animação de troca
+    themeIcon.classList.add('switching');
+    
+    setTimeout(() => {
+        if (currentTheme === 'light') {
+            // Mudar para modo escuro
+            document.body.classList.add('dark-mode');
+            currentTheme = 'dark';
+        } else {
+            // Mudar para modo claro
+            document.body.classList.remove('dark-mode');
+            currentTheme = 'light';
+        }
+        
+        // Salvar no localStorage
+        localStorage.setItem('theme', currentTheme);
+        
+        updateThemeDisplay();
+        updateImages(); // ADICIONE ESTA LINHA
+        
+        // Remover classe de animação após completar
+        setTimeout(() => {
+            themeIcon.classList.remove('switching');
+        }, 600);
+    }, 300);
+}
+
+// Modifique também a função initTheme() adicionando a chamada updateImages()
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        currentTheme = savedTheme;
+        if (currentTheme === 'dark') {
+            document.body.classList.add('dark-mode');
+        }
+    }
+    updateThemeDisplay();
+    updateImages(); // ADICIONE ESTA LINHA
+}
 
 let swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
